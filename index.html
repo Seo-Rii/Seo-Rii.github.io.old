@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <style>
+      #logo-l1 {
+          stroke-dasharray: 515;
+          stroke-dashoffset: 515;
+          animation: logo-dash .3s cubic-bezier(0, .5, .5, 1) forwards;
+          animation-delay: .3s;
+          opacity: 0;
+      }
+
+      #logo-l2 {
+          stroke-dasharray: 164;
+          stroke-dashoffset: 164;
+          animation: logo-dash .1s linear forwards;
+          animation-delay: .4s;
+          opacity: 0;
+      }
+
+      #logo-l3 {
+          stroke-dasharray: 188;
+          stroke-dashoffset: 188;
+          animation: logo-dash .3s cubic-bezier(0, .2, .2, 1) forwards;
+          animation-delay: .52s;
+          opacity: 0;
+      }
+
+      #logo-l4 {
+          stroke-dasharray: 164;
+          stroke-dashoffset: 164;
+          animation: logo-dash .1s linear forwards;
+          animation-delay: .6s;
+          opacity: 0;
+      }
+
+      #logo-l5 {
+          stroke-dasharray: 188;
+          stroke-dashoffset: 188;
+          animation: logo-dash .3s cubic-bezier(0, .2, .2, 1) forwards;
+          animation-delay: .72s;
+          opacity: 0;
+      }
+
+      @keyframes logo-dash {
+          0% {
+              opacity: 0;
+          }
+          2% {
+              opacity: 0;
+          }
+          50% {
+              opacity: 1;
+          }
+          100% {
+              stroke-dashoffset: 0;
+              opacity: 1;
+          }
+      }
+
+      #__preloader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          z-index: 99999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: opacity 0.5s;
+      }
+
+      #__preloader.hide {
+          opacity: 0;
+          user-focus: none;
+          user-select: none;
+          pointer-events: none;
+      }
+  </style>
+  <div id="__preloader">
+    <svg height="535" id="splashSvg" overflow="hidden" viewBox="0 0 597 535" width="597"
+         style="height: auto;width:200px;">
+      <defs>
+        <clipPath id="clip0">
+          <rect height="535" width="597" x="343" y="97" />
+        </clipPath>
+        <linearGradient gradientUnits="userSpaceOnUse" id="stroke1" spreadMethod="reflect" x1="343" x2="938.918"
+                        y1="360"
+                        y2="360">
+          <stop offset="0" stop-color="#595959" />
+          <stop offset="0.125" stop-color="#575757" />
+          <stop offset="0.25" stop-color="#525252" />
+          <stop offset="0.375" stop-color="#4A4A4A" />
+          <stop offset="0.5" stop-color="#404040" />
+          <stop offset="0.625" stop-color="#343434" />
+          <stop offset="0.75" stop-color="#252525" />
+          <stop offset="0.875" stop-color="#131313" />
+          <stop offset="1" />
+        </linearGradient>
+        <linearGradient gradientUnits="userSpaceOnUse" id="stroke2" spreadMethod="reflect" x1="534.735" x2="621.851"
+                        y1="83.7173" y2="328.39">
+          <stop offset="0" stop-color="#C7D5ED" />
+          <stop offset="0.68" stop-color="#3366FF" />
+          <stop offset="1" stop-color="#3366FF" />
+        </linearGradient>
+        <linearGradient gradientUnits="userSpaceOnUse" id="stroke3" spreadMethod="reflect" x1="-29.993" x2="158.381"
+                        y1="-48.3969" y2="176.098">
+          <stop offset="0" stop-color="#3366FF" />
+          <stop offset="0.32" stop-color="#3366FF" />
+          <stop offset="0.69" stop-color="#003399" />
+          <stop offset="1" stop-color="#003399" />
+        </linearGradient>
+        <linearGradient gradientUnits="userSpaceOnUse" id="stroke4" spreadMethod="reflect" x1="746.602" x2="659.486"
+                        y1="645.019" y2="400.346">
+          <stop offset="0" stop-color="#C7D5ED" />
+          <stop offset="0.72" stop-color="#3366FF" />
+          <stop offset="1" stop-color="#3366FF" />
+        </linearGradient>
+        <linearGradient gradientUnits="userSpaceOnUse" id="stroke5" spreadMethod="reflect" x1="-29.993" x2="158.381"
+                        y1="-48.3969" y2="176.098">
+          <stop offset="0" stop-color="#3366FF" />
+          <stop offset="0.32" stop-color="#3366FF" />
+          <stop offset="0.69" stop-color="#003399" />
+          <stop offset="1" stop-color="#003399" />
+        </linearGradient>
+      </defs>
+      <g clip-path="url(#clip0)" transform="translate(-343 -97)">
+        <path d="M383 360 898.918 360" fill="none" id="logo-l1" stroke="url(#stroke1)"
+              stroke-linecap="round" stroke-miterlimit="8" stroke-width="80" />
+        <path d="M521.439 146.453 635.148 265.655" fill="none" id="logo-l2" stroke="url(#stroke2)"
+              stroke-linecap="round" stroke-miterlimit="8" stroke-width="80" />
+        <path d="M0 0 128.388 127.701" fill="none" id="logo-l3" stroke="url(#stroke3)" stroke-linecap="round"
+              stroke-miterlimit="8" stroke-width="80" transform="matrix(1 0 0 -1 641 265.701)" />
+        <path d="M759.899 582.283 646.189 463.081" fill="none" id="logo-l4" stroke="url(#stroke4)"
+              stroke-linecap="round" stroke-miterlimit="8" stroke-width="80" />
+        <path d="M0 0 128.388 127.701" fill="none" id="logo-l5" stroke="url(#stroke5)" stroke-linecap="round"
+              stroke-miterlimit="8" stroke-width="80" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 640.388 463)" />
+      </g>
+    </svg>
+  </div>
+  <meta name="description" content="" />
+  <link rel="icon" href="./favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-aed186da.css">
+	<link rel="stylesheet" href="/_app/assets/pages/index.svelte-e6aee5b3.css">
+	<link rel="modulepreload" href="/_app/start-1d0426d8.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-f0095a1c.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-be4a6f07.js">
+	<link rel="modulepreload" href="/_app/pages/index.svelte-c4ee2aa4.js">
+</head>
+<body>
+<div style="height: 100%">
+
+
+<div class="container block svelte-193zfd4"><h1 class="svelte-193zfd4">안녕하세요,</h1>
+  <h1 class="svelte-193zfd4">개발자 <span class="highlight svelte-193zfd4">이서현</span>이에요!</h1>
+  <div class="scroll-downs svelte-193zfd4"><div class="mousey svelte-193zfd4"><div class="scroller svelte-193zfd4"></div></div></div></div>
+<div class="container svelte-193zfd4"><h1 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">저</span>는 <span class="highlight svelte-193zfd4">이렇게</span> 살아왔어요!</h1>
+  <h3 class="svelte-193zfd4">학력</h3>
+  <p class="svelte-193zfd4"><span class="highlight svelte-193zfd4">22.03 - </span> KAIST 새내기과정학부</p>
+  <p class="svelte-193zfd4"><span class="highlight svelte-193zfd4">20.08, 21.01</span> 국제정보올림피아드 계절학기 수료</p>
+  <p class="svelte-193zfd4"><span class="highlight svelte-193zfd4">19.03 - 22.01</span> 인천과학예술영재학교</p>
+  <p class="svelte-193zfd4"><span class="highlight svelte-193zfd4">18.08, 19.01</span> 국제정보올림피아드 계절학기 수료</p>
+  <h3 class="svelte-193zfd4">수상</h3>
+  <p class="svelte-193zfd4">2021 한국정보올림피아드 2차대회 <span class="highlight svelte-193zfd4">은상</span></p>
+  <p class="svelte-193zfd4">2021 한국정보올림피아드 1차대회 <span class="highlight svelte-193zfd4">은상</span></p>
+  <p class="svelte-193zfd4">2020 인천광역시 SW 해커톤 <span class="highlight svelte-193zfd4">대상</span></p>
+  <p class="svelte-193zfd4">2019 한국정보올림피아드 2차대회 <span class="highlight svelte-193zfd4">동상</span></p>
+  <p class="svelte-193zfd4">2019 한국정보올림피아드 1차대회 <span class="highlight svelte-193zfd4">은상</span></p>
+  <p class="svelte-193zfd4">2018 한국코드페어 베타 <span class="highlight svelte-193zfd4">최우수상</span></p>
+  <p class="svelte-193zfd4">2018 한국정보올림피아드 전국대회 <span class="highlight svelte-193zfd4">은상</span></p></div>
+<div class="container svelte-193zfd4"><h1 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">저</span>는 <span class="highlight svelte-193zfd4">이런걸</span> 만들었어요!</h1>
+
+  <h3 style="display: inline-block" class="svelte-193zfd4">DOOL, <a href="//jungol.co.kr" class="svelte-193zfd4">JUNGOL</a>의 새로운 채점 시스템</h3>
+  <object data="/stack/node.svg" type="image/svg+xml"></object>
+  <object data="/stack/typescript.svg" type="image/svg+xml"></object>
+  <object data="/stack/ws.svg" type="image/svg+xml"></object>
+  <object data="/stack/gcloud.svg" type="image/svg+xml"></object>
+  <object data="/stack/docker.svg" type="image/svg+xml"></object>
+  <object data="/stack/kubernetes.svg" type="image/svg+xml"></object>
+  <object data="/stack/knative.svg" type="image/svg+xml"></object>
+  <object data="/stack/bash.svg" type="image/svg+xml"></object>
+  <br class="svelte-193zfd4">
+  <h4 style="display: inline-block" class="svelte-193zfd4">UPTION, 데이터 에디터</h4>
+  <object data="/stack/svelte.svg" type="image/svg+xml"></object>
+  <object data="/stack/node.svg" type="image/svg+xml"></object>
+  <object data="/stack/typescript.svg" type="image/svg+xml"></object>
+  <object data="/stack/gcloud.svg" type="image/svg+xml"></object>
+  <object data="/stack/docker.svg" type="image/svg+xml"></object>
+  <br class="svelte-193zfd4">
+  <p class="svelte-193zfd4">Jungol의 기존 채점 시스템은 HustOJ를 사용했는데, 소스가 매우 꼬여있어 채점 서버에 자주 문제가 생기고 대기열 또한 길었습니다.</p>
+  <p class="svelte-193zfd4">이를 해결하기 위해 Knative 위에서 서버리스로 작동하는 채점 서버를 구현함으로써 안정적이고 대기열이 없는 채점기를 만들었어요!</p>
+  <p class="svelte-193zfd4">Pub/Sub, EventARC, Datastore 등 GCP의 기능들을 적극적으로 활용했어요.</p>
+
+  <h3 style="display: inline-block" class="svelte-193zfd4">정올 v3.0</h3>
+  <object data="/stack/svelte.svg" type="image/svg+xml"></object>
+  <object data="/stack/node.svg" type="image/svg+xml"></object>
+  <object data="/stack/typescript.svg" type="image/svg+xml"></object>
+  <object data="/stack/ws.svg" type="image/svg+xml"></object>
+  <object data="/stack/wa.svg" type="image/svg+xml"></object>
+  <object data="/stack/gcloud.svg" type="image/svg+xml"></object>
+  <object data="/stack/docker.svg" type="image/svg+xml"></object>
+  <object data="/stack/kubernetes.svg" type="image/svg+xml"></object>
+  <object data="/stack/knative.svg" type="image/svg+xml"></object>
+  <br class="svelte-193zfd4">
+  <p class="svelte-193zfd4">아직 만들고 있어요!</p>
+
+  <h3 style="display: inline-block" class="svelte-193zfd4">IASA PORTAL</h3>
+  <object data="/stack/react.svg" type="image/svg+xml"></object>
+  <object data="/stack/node.svg" type="image/svg+xml"></object>
+  <object data="/stack/typescript.svg" type="image/svg+xml"></object>
+  <object data="/stack/aws.svg" type="image/svg+xml"></object>
+  <object data="/stack/docker.svg" type="image/svg+xml"></object>
+  <object data="/stack/nginx.svg" type="image/svg+xml"></object>
+  <object data="/stack/mongodb.svg" type="image/svg+xml"></object>
+  <br class="svelte-193zfd4">
+  <p class="svelte-193zfd4">인천과학예술영재학교는 학사시스템을 구글 독스로 관리해 불편한 점이 많았는데, 이러한 기능을 하나의 사이트로 구현한 것이 IASA PORTAL입니다.</p>
+  <p class="svelte-193zfd4">프론트엔드는 React로, 백엔드는 Express로 작동해요.</p>
+
+  <h3 style="display: inline-block" class="svelte-193zfd4">electron-acrylic-window <span style="font-size: 17px;" class="highlight svelte-193zfd4">오픈소스!</span></h3>
+  <object data="/stack/cpp.svg" type="image/svg+xml"></object>
+  <object data="/stack/node.svg" type="image/svg+xml"></object>
+  <object data="/stack/typescript.svg" type="image/svg+xml"></object>
+  <object data="/stack/winapi.svg" type="image/svg+xml"></object>
+  <br class="svelte-193zfd4">
+  <p class="svelte-193zfd4">Electron 프레임워크에서 윈도우에 acrylic effect를 간편하게 줄 수 있는 네이티브 모듈이에요.</p></div>
+
+<div class="container svelte-193zfd4"><h1 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">저</span>는 <span class="highlight svelte-193zfd4">이런걸</span> 할 수 있어요!</h1>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">C++</span>로 <span class="highlight svelte-193zfd4">알고리즘</span> 문제 해결을 할 수 있어요!</h4>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">Svelte, React</span>로 <span class="highlight svelte-193zfd4">프론트엔드</span> 코딩을 할 수 있어요!</h4>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">Express, Koa, PHP</span>로 <span class="highlight svelte-193zfd4">백엔드</span> 코딩을 할 수 있어요!</h4>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">AWS, GCP</span>를 다룰 수 있어요!</h4>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">Docker, Kubernetes</span>를 다룰 수 있어요!</h4>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">MongoDB</span>를 다룰 수 있어요!</h4>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">Github Action</span>과 같은 다양한 <span class="highlight svelte-193zfd4">깃/깃허브</span> 기능을 쓸 수 있어요!</h4>
+  <h4 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">파이썬, VB</span>등의 <span class="highlight svelte-193zfd4">언어</span>를 다룰 수 있어요!</h4></div>
+
+<div class="container svelte-193zfd4"><h1 class="svelte-193zfd4"><span class="highlight svelte-193zfd4">저</span>한테 <span class="highlight svelte-193zfd4">연락</span>하시려면...</h1>
+  <h4 class="svelte-193zfd4">Github <span class="highlight svelte-193zfd4">@Seo-Rii</span></h4>
+  <h4 class="svelte-193zfd4">Mail <span class="highlight svelte-193zfd4">04seohyun@gmail.com</span></h4>
+  <h4 class="svelte-193zfd4">Baekjoon <span class="highlight svelte-193zfd4">@seo-rii</span></h4>
+  <h4 class="svelte-193zfd4">CodeForces <span class="highlight svelte-193zfd4">@seorii</span></h4>
+  <h4 class="svelte-193zfd4">Facebook <span class="highlight svelte-193zfd4">@04seohyun</span></h4>
+  <h4 class="svelte-193zfd4">Instagram <span class="highlight svelte-193zfd4">@04seohyun_</span></h4>
+</div>
+
+
+		<script type="module" data-hydrate="1d0xfwf">
+		import { start } from "/_app/start-1d0426d8.js";
+		start({
+			target: document.querySelector('[data-hydrate="1d0xfwf"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-be4a6f07.js"),
+						import("/_app/pages/index.svelte-c4ee2aa4.js")
+				],
+				params: {}
+			}
+		});
+	</script></div>
+</body>
+</html>
